@@ -1,0 +1,78 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>Soundscribe_App</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\net6.0-windows\Images\stop_icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\net6.0-windows\Images\sound_icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\net6.0-windows\Images\play_icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\net6.0-windows\Images\statistics_icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\net6.0-windows\Images\username_icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\net6.0-windows\Images\sample_user_icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\net6.0-windows\Images\lock_open.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\net6.0-windows\Images\lock_close.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\net6.0-windows\Images\email_icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\net6.0-windows\Images\birthday_icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Soundscribe Server\Soundscribe Server.csproj" />
+    <ProjectReference Include="..\Soundscribe.DAL\Soundscribe.DAL.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="PresentationCore">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\PresentationCore.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Images.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Images.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Images.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Images.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
