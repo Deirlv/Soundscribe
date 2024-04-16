@@ -360,7 +360,7 @@ namespace Soundscribe_Server
                                         {
                                             try
                                             {
-                                                string targetFilePath = Path.Combine(folderPath, $"{count}.mp3");
+                                                string targetFilePath = Path.Combine(folderPath, $"{count}.wav");
                                                 File.Copy(q.QuestionPath!, targetFilePath);
                                                 q.QuestionPath = targetFilePath;
                                             }

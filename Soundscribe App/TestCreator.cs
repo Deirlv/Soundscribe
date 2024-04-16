@@ -119,7 +119,7 @@ namespace Soundscribe_App
 
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
                 {
-                    Paths[count].Text = openFileDialog.FileName;
+                    Paths[Convert.ToInt32(button!.Tag)].Text = openFileDialog.FileName;
                 }
             }
         }
@@ -179,6 +179,7 @@ namespace Soundscribe_App
                 {
                     MessageBox.Show("Error while creating a test. Please, try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+                Close();
             }
             catch (Exception ex)
             {
@@ -197,6 +198,9 @@ namespace Soundscribe_App
                 MessageBox.Show("You can't delete the first question!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+
+            Paths.RemoveAt(count);
+            Answers.RemoveAt(count);
             flowLayoutPanelTest.Controls.RemoveAt(count);
             count--;
         }

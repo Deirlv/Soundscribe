@@ -33,6 +33,8 @@ namespace Soundscribe_App
 
             InitializeComponent();
 
+            flowLayoutPanel1.AutoScroll = true;
+
             groupBoxUser.Visible = false;
             groupBoxAdmin.Visible = false;
 
