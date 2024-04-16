@@ -75,7 +75,7 @@ namespace Soundscribe_App
 
                 Button templateButtonPlay = new Button();
 
-                templateButtonPlay.Image = Images.play_icon1;
+                templateButtonPlay.Image = Images.play_icon;
                 templateButtonPlay.Location = new Point(528, 37);
                 templateButtonPlay.Size = new Size(35, 28);
                 templateButtonPlay.TabIndex = 1;
